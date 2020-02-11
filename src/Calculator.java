@@ -15,7 +15,7 @@ public class Calculator {
 		double result = 0;
 		if (a<b) {
 			result = a * b;
-		}else {
+		}else if (b != 0) {
 			result = a/b;
 		}
 		return result;
