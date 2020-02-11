@@ -11,11 +11,11 @@ public class Calculator {
 	 * @return the result of the action performed on and b.
 	 * @throws ArithmeticException is b is 0;
 	 */
-	public double action(double a, double b) {
+	public double action(double a, double b) throws ArithmeticException{
 		double result = 0;
 		if (a<b) {
 			result = a * b;
-		}else if (b != 0) {
+		}else {
 			result = a/b;
 		}
 		return result;
